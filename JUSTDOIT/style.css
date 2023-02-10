@@ -3,3 +3,27 @@
 
 @import "components/header.css";
 @import "components/navbar.css";
+
+
+ul {
+  display: flex;
+  margin: 30px;
+}
+
+
+.nav__ {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.nav__icons {
+
+  padding: 30px;
+  color: #bdbdbd;
+}
+
+.nav__text {
+  display: block;
+  justify-content: bottom;
+}
