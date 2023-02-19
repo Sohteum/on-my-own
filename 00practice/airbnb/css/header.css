@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import "reset.css";
-
-@import "css/header.css";
-@import "css/navbar.css";
-
-
-body {
-  margin: 0px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
