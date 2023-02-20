@@ -11,11 +11,12 @@
   align-items: center;
   flex-wrap: nowrap;
   color: #757575;
+  font-size: 11px;
 }
 
 
 .nav__text {
-  font-size: 15px;
+  font-size: 13px;
   color: #7a7676;
-  margin-top: 25px;
+  margin-top: 20px;
 }
