@@ -5,7 +5,7 @@
   margin: none;
   width: 100%;
   height: 80px;
-  
+
 
 }
 
@@ -17,11 +17,11 @@
 }
 
 #logo__text {
-  font-size:25px;
+  font-size: 25px;
 }
 
 #logo__icon {
-  font-size:35px;
+  font-size: 35px;
 }
 
 .logo__bar a {
@@ -37,22 +37,27 @@
 }
 
 .search__bar input {
-  width: 280px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   border: 1px solid #a8a4a4;
   border-radius: 20px;
+}
+
+.search__bar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #FF385C;
+  color: white;
 }
 
 input:focus {
   outline: none;
 }
 
-
-.search__bar button {
-  position: absolute;
-  left: 470px;
-  /* 의미없...반응형불가 */
-}
 
 
 
@@ -70,11 +75,12 @@ input:focus {
   /* margin-right: 10px; */
 }
 
-
-#user__hamberger {
-  margin-left: 10px;
-}
-
-#user__icon {
-  padding-left: 8px;
+.etc__bar div {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #a8a4a4;
+  border-radius: 20px;
+  padding: 8px;
+   width: 50px;
+   font-size: 20px;
 }
