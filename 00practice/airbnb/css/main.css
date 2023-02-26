@@ -1,17 +1,19 @@
 .place-info {
+  width: 1500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   box-sizing: border-box;
-/*   margin: 30px; 왜 여기서 마진적용이 안될까?*/
 }
 
 .place-info__pack {
   margin: 30px;
+  flex: 1;
 }
 
-.place-info__img img{
-  width:300px;
+.place-info__img img {
+  width: 300px;
   /* 왜백그라운드사이즈로 하면 적용이 안될까?아 백그라운드는 하나니까 그런거같아 나는 여러사진을 쓰는거니까*/
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -27,9 +29,13 @@
 .place-info__img i {
   opacity: 0.8;
   font-size: 20px;
-  color:white;
+  color: white;
   position: absolute;
   right: 45px;
-  bottom:160px;
+  bottom: 160px;
 }
 
+.place-info__text {
+  display: flex;
+  flex-direction: column;
+}

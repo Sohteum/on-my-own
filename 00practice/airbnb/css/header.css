@@ -1,22 +1,24 @@
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 45px;
-  margin: 15px 40px 0px 40px;
- }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 .logo__bar {
   display: flex;
+  align-items: center;
+  margin: 30px 0 30px 50px;
   color: #FF385C;
 }
 
 #logo__icon {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 #logo__text {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
   letter-spacing: -1px;
   margin-left: 3px;
@@ -28,20 +30,23 @@
 }
 
 .search__bar {
+  width: 400px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 10px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
-.search__bar input {
-  width: 300px;
-  height: 40px;
-  border: 1px solid #a8a4a4;
-  border-radius: 20px;
+
+.search__bar a:first-child {
+  margin-left: 12px;
 }
 
-.search__bar a {
+.search__bar a:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,10 +57,10 @@
   color: white;
 }
 
-input:focus {
+/* input:focus {
   outline: none;
 }
-
+ */
 
 .etc__bar {
   display: flex;
@@ -92,4 +97,4 @@ input:focus {
 
 #user__icon {
   font-size: 30px;
- }
+}
