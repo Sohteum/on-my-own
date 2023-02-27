@@ -64,9 +64,10 @@
 
 .etc__bar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   list-style: none;
-  align-items: center;
+  margin-right: 40px;
   /*padding: 20px;  안의 요소 전부 패딩 못주나? */
 }
 
