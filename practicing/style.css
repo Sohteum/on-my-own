@@ -1,0 +1,13 @@
+div>span {
+  background-color: yellow;
+}
+
+div>div {
+  background-color: pink;
+
+}
+
+div>button {
+  background-color: green;
+
+}
