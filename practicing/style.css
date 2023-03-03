@@ -120,3 +120,8 @@ inline-block은 글자를 담고있는애, 즉 본인에게인건지? */
   line-height: 200px;
 
 }
+
+
+.container1 {
+  display: flex;
+}
