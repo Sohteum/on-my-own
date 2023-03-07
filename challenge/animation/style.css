@@ -1,0 +1,98 @@
+body {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.animation {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #6BBCBE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes rotateDot {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+.dot {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  animation: rotateDot 1s ease-in-out infinite;
+  animation-delay: -5s;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+  width: 10px;
+  height: 10px;
+  background-color: #FCFCFC;
+  border-radius: 50%;
+  transform: rotate(1turn);
+}
+
+
+
+.bar {
+  display: flex;
+  width: 80px;
+  height: 130px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+@keyframes moveBar {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: scaleY(1.6);
+  }
+}
+
+.bar1,
+.bar2,
+.bar3,
+.bar4,
+.bar5 {
+  width: 10px;
+  height: 40px;
+  background-color: #FCFCFC;
+  animation: moveBar 1s ease-in-out infinite;
+  animation-delay: -1s;
+}
+
+
+.bar>div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bar>div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.bar>div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.bar>div:nth-child(5) {
+  animation-delay: 0.8s;
+}
