@@ -1,113 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/10bf1730a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/10bf1730a7.js" crossorigin="anonymous"></script>
-  <title>Document</title>
-</head>
+  <body>
+    <header>
+      <div class="icons">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+        <a href="#"><span>library</span></a>
+        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+      <div class="searchBar">
+        <input
+          type="text"
+          placeholder="Search books..."
+        />
+        <a><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+    </header>
 
-<body>
-
-  <header>
-    <div class="icons">
-      <a href="#"><i class="fa-solid fa-bars"></i></a>
-      <a href="#"><span>library</span></a>
-      <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-    </div>
-    <div class="searchBar">
-      <input type="text" placeholder="Search books...">
-      <a><i class="fa-solid fa-magnifying-glass"></i></a>
-    </div>
-  </header>
-
-  <main>
-    <div class="thisBook">
-      <h3>Book of the day</h3>
-      <img src="" alt="">
-      <div class="bookAll">
-        <div class="bookInfo">
-          <span>No Fixed Abode</span>
-          <span>journey Through</span>
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
+    <main>
+      <div class="thisBook">
+        <span>Book of the day</span>
+        <div class="thisBook__">
+          <img src="./image/1.jpg" />
+          <div class="bookAll">
+            <div class="bookInfo">
+              <span>No Fixed Abode</span>
+              <span>journey Through</span>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="attr">
+              <span>Journey</span>
+              <span>Biography</span>
+            </div>
+            <div class="bookmark">
+              <a href=""><i class="fa-solid fa-bookmark"></i></a>
+              <span>Book now</span>
+            </div>
           </div>
         </div>
-        <div class="attr">
-          <div>Journey</div>
-          <div>Biography</div>
+      </div>
+
+      <div class="bookList">
+        <span>Top Adventures</span>
+        <div class="recomand">
+          <div class="recomand__set">
+            <a href=""><img src="./image/1.jpg" /></a>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="recomand__set">
+            <a href=""><img src="./image/1.jpg" /></a>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="recomand__set">
+            <a href=""><img src="./image/1.jpg" /></a>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="recomand__set">
+            <a href="#"><img src="./image/1.jpg" /></a>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
         </div>
-        <div class="bookmark">
-          <a href=""><i class="fa-solid fa-bookmark"></i></a>
-          <div><span>Book now</span></div>
+
+        <div class="produce">
+          <span>Popular authors</span>
+          <div class="author__">
+            <img src="./image/1.jpg" />
+            <div class="author">
+              <span class="author_name"
+                >George Raymond <br />
+                Richard Martin</span
+              >
+              <span class="author_content">
+                Modern American science <br />
+                fiction writer, screenwriter <br />
+                producer and editor, winner <br />
+                of many literary awards.
+              </span>
+            </div>
+          </div>
         </div>
       </div>
+    </main>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
     </div>
-
-    <div class="bookList">
-      <h3>Top Adventures</h3>
-      <div class="recomand">
-        <a href=""><img src="" alt=""></a>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-      </div>
-      <div class="recomand">
-        <a href=""><img src="" alt=""></a>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-      </div>
-      <div class="recomand">
-        <a href=""><img src="" alt=""></a>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-      </div>
-      <div class="recomand">
-        <a href=""><img src="" alt=""></a>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-regular fa-star"></i>
-        </div>
-      </div>
-
-      <div class="produce">
-        <h3>Popular aythors</h3>
-        <img src="" alt="">
-        <div class="author">
-          <div class="author_name"></div>
-          <div class="author_content"></div>
-        </div>
-      </div>
-    </div>
-
-
-  </main>
-
-
-</body>
-
+  </body>
 </html>

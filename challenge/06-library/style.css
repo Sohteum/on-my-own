@@ -1,37 +1,101 @@
+@import "css/no-mobile.css";
+@import "css/booklist.css";
+@import "css/author.css";
+
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+body {
+  height: 150vh;
+  background-color: whitesmoke;
+}
+
+
 header {
   background-color: rgb(252, 186, 45);
+  position: relative;
 }
 
 main {
-  background-color: whitesmoke;
+  padding: 30px;
 }
 
 .icons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 50px 20px 60px 20px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
 }
 
 .searchBar {
+  position: absolute;
+  left: calc(50% - 250px);
+  top: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 500px;
-  height: 50px;
+  height: 60px;
   border: transparent;
   border-radius: 30px;
   background-color: white;
-  box-shadow: 5px 1px black;
+  box-shadow: 1px 5px 20px rgb(209, 209, 209);
+}
+
+
+.searchBar input {
+  border: none;
+  width: 380px;
+  padding-left: 20px;
+  opacity: 0.6;
+  font-size: 17px;
 }
 
 .searchBar .fa-magnifying-glass {
-  opacity: 0.5;
+  opacity: 0.2;
   margin-left: auto;
+  font-size: 20px;
 }
 
-.thisBook {}
+.thisBook {
+  padding: 50px 0px 60px 0px;
+}
 
-h3 {}
+.thisBook__ {
+  display: flex;
+}
+
+.thisBook>span {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.thisBook img {
+  display: inline-block;
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
 
 .bookAll {
   display: flex;
+  flex-direction: column;
 }
 
 .bookInfo {
@@ -41,12 +105,14 @@ h3 {}
 }
 
 .bookInfo span:first-child {
-  font-size: 30px;
+  font-size: 28px;
+
 }
 
-.bookInfo span:last-child {
+.bookInfo span:nth-child(2) {
   font-size: 20px;
-  opacity: 0.4;
+  opacity: 0.2;
+  margin: 10px 0 20px 0;
 }
 
 .bookInfo .stars .fa-star {
@@ -54,49 +120,53 @@ h3 {}
   color: rgb(252, 186, 45);
 }
 
-.thisBook .attr {
-  width: 50px;
-  height: 20px;
-  background-color: aliceblue;
+.bookAll .attr {}
+
+.bookAll .attr span {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
   border: none;
   border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  margin: 25px 15px 25px 0;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
-.thisBook .attr div {
-font-size: 10px;
+.bookAll .attr div {
+  font-size: 10px;
+}
+
+.bookmark {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bookmark a {
-width: 20px;
-height: 20px;
-border-radius: 50%;
-border: none;
-background-color: rgb(252, 186, 45);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  font-size: 25px;
+  color: black;
+  background-color: rgb(252, 186, 45);
 }
 
-.bookmark div {
-  width: 50px;
-  height: 20px;
+.bookmark span {
+  width: 120px;
+  height: 50px;
   border: none;
+  line-height: 48px;
+  color: white;
   border-radius: 20px;
   background-color: rgb(10, 10, 10);
 }
 
-.bookmark div>span {
-  color:white;
-}
 
 /* -------------------------------------------------------------------- */
-
-.bookList .recomand {
- display: flex; 
- flex-direction: column;
-}
-
-.bookList .recomand a img {
-width: ;
-height: ;
-}
-
-
-

@@ -1,0 +1,27 @@
+.produce>span {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 20px;
+  margin: 20px 0 10px 0;
+}
+
+.produce img {
+  width: 200px;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+
+.author__ {
+  display: flex;
+}
+
+.author_name {
+  font-size: 28px;
+}
+
+.author_content {
+  display: inline-block;
+  opacity: 0.5;
+  font-size: 18px;
+  margin-top: 20px;
+}

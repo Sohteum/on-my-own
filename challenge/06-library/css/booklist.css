@@ -1,0 +1,36 @@
+.bookList .recomand {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bookList>span {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.bookList .recomand {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.bookList .recomand a img {
+  width: 120px;
+  border-radius: 20px;
+}
+
+.recomand__set {
+  margin-right: 30px;
+
+}
+
+.recomand__set .stars .fa-star {
+  font-size: 13px;
+  color: rgb(252, 186, 45);
+}
+
+.recomand__set .stars {
+  padding: 10px;
+}
