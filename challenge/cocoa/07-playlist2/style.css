@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+  background-color: rgb(240, 240, 241);
+}
+
+.page1,
+.page2 {
+  width: 450px;
+  height: 800px;
+  border-radius: 30px;
+  background-color: white;
+  padding:20px;
+}
+
+
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head a {
+  text-decoration: none;
+}
+
+.head a i {
+  color: black;
+}
+
+.playing img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.playing .playing_song .playing_name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.playing .playing_song .playing_name {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.playing .btn {
+  display: flex;
+  justify-content: space-evenly;
+  padding:20px;
+}
+
+.playing .btn {
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.playing .btn span:first-child {
+  background-color: black;
+  color:white;
+}
+.playing .btn span:last-child {
+  background-color: white;
+  color:rgba(0, 0, 0, 0.03);
+}
+
+
