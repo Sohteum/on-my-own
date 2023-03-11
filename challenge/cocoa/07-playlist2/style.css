@@ -15,9 +15,10 @@ body {
 .page2 {
   width: 430px;
   height: 900px;
-  border-radius: 30px;
+  border-radius: 50px;
   background-color: #FFFFFF;
   padding: 50px 30px;
+  box-shadow: 0 0 10px #ebebeb;
 }
 
 
@@ -47,6 +48,7 @@ body {
   height: 90px;
   border-radius: 50%;
   margin: 40px 0;
+  box-shadow: 1px 10px 15px #919191;
 }
 
 .playing_song {
@@ -94,7 +96,7 @@ body {
   padding: 11px 17px;
   font-size: 17px;
   font-weight: 400;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 0px 0px 10px rgb(225, 225, 225);
 }
 
 .playing .btn span:last-child i {
@@ -150,7 +152,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 40px;
+  box-shadow: 0 0 15px #a1a1a1;
 }
 
 .playing_bar .playing_artist,
@@ -176,10 +179,85 @@ body {
 
 /* ----------------------------------------------- */
 
+.playing__ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .playing__ img {
   width: 260px;
   height: 260px;
   border-radius: 20px;
-  margin: 100px auto;
+  margin-top: 100px;
+  margin-bottom: 70px;
   display: block;
+  box-shadow: 10px 20px 20px #b3b9c1;
+}
+
+.page2 .playing_song {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page2 .playing_song .playing_name {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.page2 .playing_value {
+  opacity: 0.4;
+  line-height: 40px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.player .play_time {
+  display: flex;
+  justify-content: space-between;
+  opacity: .3;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.player .player__bar {
+  width: 350px;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.player .player__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* input[type=range]::-ms-track {} */
+
+.player__icons .fa-rotate,
+.player__icons .fa-shuffle {
+  color: #000;
+  opacity: 0.2;
+}
+
+.player__icons .fa-backward-step,
+.player__icons .fa-forward-step {
+  color: #000;
+}
+
+.player__icons a:nth-child(3) {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #000;
+  text-align: center;
+
+}
+
+.player__icons .fa-play {
+  color: white;
+  line-height: 70px;
 }
