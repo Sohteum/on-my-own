@@ -2,12 +2,12 @@ const greet = document.querySelector("body h2");
 
 console.log(greet);
 
-const superEventHandler = {
+/*  const superEventHandler = {
   'Hello!': (mouseenter) => {
-    greet.innerText = "The mouse is here!"
-    greet.style.color = "blue"
+    greet.innerText = "The mouse is here!";,
+    greet.style.color = "blue";,
   }
-}
+}  */
 
 
 
@@ -22,12 +22,18 @@ function mouseLeave() {
   greet.style.color = "tomato";
 }
 function windowResize() {
-  /*   document.h2.innerText = "You just resized!" ;*/
-  document.body.style.color = "green";
+  window.body.style.color = "green";
+  greet.innerText = "you Just resized!";
+}
+function mouseRight() {
+
+  greet.style.color = "teal";
+  greet.innerText = "that was right click!";
 }
 
 
 
 greet.addEventListener("mouseenter", mouseEnter);
 greet.addEventListener("mouseleave", mouseLeave);
-window.addEventListener("resize", windowResize);
+window.addEventListener("contextmenu", mouseRight);
+window.addEventListener("resize", windowResize); 
