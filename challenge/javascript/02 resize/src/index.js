@@ -7,7 +7,7 @@ function winResize() {
    body.style.backgroundColor = "blue";
 } else if(innerWidth<=800 && innerWidth>500) {
   body.style.backgroundColor = "pink";
-} else if (innerWidth>=1100 && innerWidth>800) {
+} else if (innerWidth<=1100 && innerWidth>800) {
   body.style.backgroundColor = "yellow";
 } 
 }
