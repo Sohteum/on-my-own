@@ -6,22 +6,25 @@
   </head>
 
   <body>
-    <form>
-      <h1>Random Number Game</h1>
-  
-      <p>
+    <h1>Random Number Game</h1>
+    <form class="gameForm">
+        <p>
         Generate a number between 0 and
         <input class="num1" type="number" />
       </p>
   
-      <div>
+      <div class="guess">
         <p>
           Guess the number
           <input class="num2" type="number" />
           <button class="play">Play!</button>
         </p>
     </form>
+    <div class="setNum">
+      <span></span>
+      <span></span>
     </div>
+<span class="result"></span>
     <script src="src/index.js"></script>
   </body>
 </html>
