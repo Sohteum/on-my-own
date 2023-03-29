@@ -1,13 +1,17 @@
 const clockTitle = document.querySelector("h2.js-clock");
-/* const intervalID = setInterval(christmasTimeOut, 500, 'Parameter 1', 'Parameter 2'); */
 
 
-function getClock() {
-  const date = new Date();
-  const hours = String(date.getHours()).padStart(2, "0");
-  const minutes = String(date.getminutes()).padStart(2, "0");
-  const seconds = String(date.getseconds()).padStart(2, "0");
-  clockTitle.innerText = `${hours}:${minutes}:${seconds}`;
+function christmasclock() {
+  const christmas = new Date("2023-12-25");
+  const today = new Date();
+  const day = christmas - today-1;
+  
+  const date = Math.floor(day/(1000*60*60*24));
+  const hours = Math.floor(day/(1000*60*60)%24);
+  const minutes = Math.floor(day/(1000*60)%60);
+  const seconds = Math.floor((day/1000)%60);
+  clockTitle.innerText = `${date}Days:${hours}h:${minutes}m:${seconds}s`;
 }
-getClock();
-setInterval(getClock, 1000);
+
+setInterval(christmasclock, 1000);
+
