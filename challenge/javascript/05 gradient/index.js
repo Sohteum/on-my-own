@@ -18,21 +18,30 @@ const colors = [
   "#ffd32a",
   "#ff3f34"
 ];
-const btn = document.querySelector('button')
-let n = 0
 
-
-
-btn.addEventListener("click", (e) => {
+document.querySelector('button').addEventListener("click", (e) => {
+  for (let i = 0; i <= colors.length; i++) {
+    let randomColor = Math.floor(Math.random() * colors.length)
+    body.style.backgroundColor = colors[randomColor];
+  }
   document.body.style.backgroundColor = colorChange;
 });
-function colorChange() {
-  let randomColor = Math.floor(Math.random() * colors.length)
-  body.style.backgroundColor = colors[randomColor];
-}
 
 
 
-/* document.querySelector(`button`).addEventListener(`click`, e => {
-  
-}) */
+// const btn = document.querySelector("button");
+
+// function handleClick() {
+//   const a = colors[Math.floor(Math.random() * colors.length)];
+//   const b = colors[Math.floor(Math.random() * colors.length)];
+//   if (a === b) {
+//     return handleClick();
+//   }
+//   document.body.style.background = `linear-gradient(to left, ${a}, ${b})`;
+// }
+
+// btn.addEventListener("click", handleClick);
+
+
+
+
