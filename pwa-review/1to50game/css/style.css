@@ -1,0 +1,144 @@
+body {
+  color: #666;
+  font-family: "Raleway", "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  background-color: rgb(54, 210, 49);
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(100%, 500px);
+  height: min(100%, 700px);
+  min-height: 650px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section.active {
+  animation: jello 1s;
+}
+
+.ui {
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 30px;
+}
+.ui .wrap-bottom {
+  display: flex;
+  align-items: center;
+}
+.ui .wrap-bottom b.next-num {
+  width: 40%;
+  height: 80px;
+  line-height: 80px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 10px;
+  box-sizing: border-box;
+}
+.ui .wrap-bottom div.wrap-right {
+  flex: 1;
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: lightcyan;
+}
+.ui .wrap-bottom div.wrap-right button.btn-restart {
+  width: 100%;
+  height: 40px;
+  background-color: lightpink;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.ui .wrap-bottom div.wrap-right em.sec {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+.board button {
+  background-color: lightgreen;
+  position: relative;
+  width: 20%;
+  border: 1px solid #000;
+}
+.board button:disabled {
+  cursor: none;
+  opacity: 0.5;
+}
+.board button::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.board button span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+div.init {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #666;
+}
+div.init button.btn-start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #666;
+  padding: 10px 40px;
+}
+
+div.game-over {
+  display: none; /* flex */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #666;
+}
+div.game-over p {
+  font-size: 1.5em;
+  color: red;
+}
+div.game-over .btn-again {
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  background-color: red;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
