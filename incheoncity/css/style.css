@@ -1,0 +1,31 @@
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.header-top a {
+  width: 100%;
+}
+
+.header-top-2 {
+  display: flex;
+  list-style: none;
+}
+.header-top-2 a {
+  text-decoration: none;
+}
+.header-top-2 > li {
+  padding: 10px;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-bottom .header-bottom-nav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */

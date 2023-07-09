@@ -1,0 +1,31 @@
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(#000, 0.3);
+  a {
+    width: 100%;
+  }
+}
+
+.header-top-2 {
+  display: flex;
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+  > li {
+    padding: 10px;
+  }
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  .header-bottom-nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+}

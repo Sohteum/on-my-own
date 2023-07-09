@@ -1,0 +1,9 @@
+* {
+  padding: none;
+  margin: none;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000000px;
+}
