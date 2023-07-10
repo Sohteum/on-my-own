@@ -33,19 +33,41 @@
 }
 .section1 .slideList .left {
   left: 30px;
+  background: url("../img/left.png ") center center/100% no-repeat;
 }
 .section1 .slideList .right {
   right: 30px;
+  background: url("../img/right.png") center center/100% no-repeat;
 }
 
-.section1[id=slide-01]:checked .slideWrap .slideList li {
+.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
   transform: translateX(0%);
 }
 
-.section1[id=slide-02]:checked .slideWrap .slideList li {
+.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
   transform: translateX(-100%);
 }
 
-.section1[id=slide-03]:checked .slideWrap .slideList li {
+.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
   transform: translateX(-200%);
+}
+
+.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
+  transform: translateX(-300%);
+}
+
+.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
+  transform: translateX(-400%);
+}
+
+.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
+  transform: translateX(-500%);
+}
+
+.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
+  transform: translateX(-600%);
+}
+
+.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
+  transform: translateX(-700%);
 }/*# sourceMappingURL=main.css.map */
