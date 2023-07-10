@@ -1,0 +1,51 @@
+.section1 input[id*=slide] {
+  display: none;
+}
+.section1 .slideWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.section1 .slideList {
+  white-space: nowrap;
+  font-size: 0;
+}
+.section1 .slideList li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all 0.5s;
+}
+.section1 .slideList li a {
+  display: block;
+  position: relative;
+}
+.section1 .slideList li a img {
+  width: 100%;
+}
+.section1 .slideList label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+}
+.section1 .slideList .left {
+  left: 30px;
+}
+.section1 .slideList .right {
+  right: 30px;
+}
+
+.section1[id=slide-01]:checked .slideWrap .slideList li {
+  transform: translateX(0%);
+}
+
+.section1[id=slide-02]:checked .slideWrap .slideList li {
+  transform: translateX(-100%);
+}
+
+.section1[id=slide-03]:checked .slideWrap .slideList li {
+  transform: translateX(-200%);
+}/*# sourceMappingURL=main.css.map */

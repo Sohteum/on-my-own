@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
   <script defer src="./js/store.js"></script>
   <title>홈 | 인천광역시 대표</title>
 </head>
@@ -28,7 +29,7 @@
       </ul>
     </section>
     <header class="header-bottom">
-      <nav>
+      <section>
         <ul class="header-bottom-nav">
           <li><a href="">인천소식</a></li>
           <li><a href="">소통참여</a></li>
@@ -37,7 +38,7 @@
           <li><a href="">분야별</a></li>
           <li><a href="">전체메뉴</a><i class="fa-solid fa-bars"></i></li>
         </ul>
-      </nav>
+      </section>
       <button><a>회원가입</a></button>
       <select name="" id="">Language
         <option value="">한국어</option>
@@ -51,21 +52,73 @@
 
 
   <main>
-    <div>
-      <input type="text">
+    <div class="section1">
       <img class="main-visual" src="" alt=""><!-- 슬라이드 구현 -->
+      <input type="radio" name="slide" id="slide-01" checked>
+      <input type="radio" name="slide" id="slide-02">
+      <input type="radio" name="slide" id="slide-03">
+      <input type="radio" name="slide" id="slide-04">
+      <input type="radio" name="slide" id="slide-05">
+      <input type="radio" name="slide" id="slide-06">
+      <input type="radio" name="slide" id="slide-07">
+      <div class="slideWrap">
+        <ul class="slideList">
+          <li>
+            <a href="">
+              <label for="slide-07" class="left"><i class="fa-solid fa-chevron-left"></i></label>
+              <img src="./img/getImage1.jpg" alt="">
+              <label for="slide-02" class="right"><i class="fa-solid fa-chevron-right"></i></label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <label for="slide-01" class="left"><i class="fa-solid fa-chevron-left"></i></label>
+              <img src="./img/getImage2.jpg" alt="">
+              <label for="slide-03" class="right"><i class="fa-solid fa-chevron-right"></i></label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <label for="slide-02" class="left"><i class="fa-solid fa-chevron-left"></i></label>
+              <img src="./img/getImage3.jpg" alt="">
+              <label for="slide-04" class="right"><i class="fa-solid fa-chevron-right"></i></label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <label for="slide-03" class="left"><i class="fa-solid fa-chevron-left"></i></label>
+              <img src="./img/getImage4.jpg" alt="">
+              <label for="slide-05" class="right"><i class="fa-solid fa-chevron-right"></i></label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <label for="slide-04" class="left"><i class="fa-solid fa-chevron-left"></i></label>
+              <img src="./img/getImage5.jpg" alt="">
+              <label for="slide-06" class="right"><i class="fa-solid fa-chevron-right"></i></label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <label for="slide-05" class="left"><i class="fa-solid fa-chevron-left"></i></label>
+              <img src="./img/getImage6.jpg" alt="">
+              <label for="slide-07" class="right"><i class="fa-solid fa-chevron-right"></i></label>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <label for="slide-06" class="left"><i class="fa-solid fa-chevron-left"></i></label>
+              <img src="./img/getImage7.jpg" alt="">
+              <label for="slide-08" class="right"><i class="fa-solid fa-chevron-right"></i></label>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div>
-      <script>
-        mainVisualArr.forEach(function (v) {
-          $(`.main-visual`).append(`
-          <figure>
-          <img src=${v.path}>
-        </figure>
-          `)
-        })
-      </script>
+
     </div>
+
   </main>
 </body>
 
