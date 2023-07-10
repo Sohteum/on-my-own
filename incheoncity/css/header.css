@@ -6,7 +6,7 @@
   height: 70px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-.header-top a {
+.header-top a img {
   width: 100%;
 }
 
@@ -24,6 +24,7 @@
 .header-bottom {
   display: flex;
   justify-content: space-evenly;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .header-bottom .header-bottom-nav {
   display: flex;
@@ -35,4 +36,4 @@
 }
 .header-bottom .header-bottom-nav li a {
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=header.css.map */
