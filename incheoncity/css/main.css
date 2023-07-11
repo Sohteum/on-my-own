@@ -1,73 +1,56 @@
-.section1 input[id*=slide] {
-  display: none;
-}
-.section1 .slideWrap {
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.section1 .slideList {
-  white-space: nowrap;
-  font-size: 0;
-}
-.section1 .slideList li {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  transition: all 0.5s;
-}
-.section1 .slideList li a {
-  display: block;
+.section1 {
   position: relative;
+  margin-top: 50px;
 }
-.section1 .slideList li a img {
+.section1 .carousel {
+  position: absolute;
+  transform: translate(50%, 50%, -50%, -50%);
+  top: 0;
+  bottom: 0;
+  width: min(90%, 800px);
+}
+.section1 .carousel img {
   width: 100%;
 }
-.section1 .slideList label {
+.section1 .carousel img.dummy {
+  opacity: 0;
+}
+.section1 .carousel img.img {
   position: absolute;
-  z-index: 10;
+  top: 0;
+  opacity: 0;
+}
+.section1 .carousel img.img1 {
+  opacity: 1;
+}
+.section1 .carousel button {
+  position: absolute;
+  top: 70%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #000;
+  opacity: 0.5;
+}
+.section1 .carousel button:hover {
+  opacity: 1;
+}
+.section1 .carousel button::before {
+  content: "";
+  position: absolute;
+  transform: translate(50%, 50%, -50%, -50%);
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--dark-color);
+}
+.section1 .carousel button.prev {
   top: 50%;
-  transform: translateY(-50%);
-  padding: 50px;
-  cursor: pointer;
+  left: 20px;
 }
-.section1 .slideList .left {
-  left: 30px;
-  background: url("../img/left.png ") center center/100% no-repeat;
-}
-.section1 .slideList .right {
-  right: 30px;
-  background: url("../img/right.png") center center/100% no-repeat;
-}
-
-.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
-  transform: translateX(0%);
-}
-
-.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
-  transform: translateX(-100%);
-}
-
-.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
-  transform: translateX(-200%);
-}
-
-.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
-  transform: translateX(-300%);
-}
-
-.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
-  transform: translateX(-400%);
-}
-
-.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
-  transform: translateX(-500%);
-}
-
-.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
-  transform: translateX(-600%);
-}
-
-.section1[id=slide-01]:checked ~ .slideWrap .slideList li {
-  transform: translateX(-700%);
+.section1 .carousel button.next {
+  right: 20px;
 }/*# sourceMappingURL=main.css.map */
