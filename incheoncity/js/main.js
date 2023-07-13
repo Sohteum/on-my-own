@@ -12,7 +12,7 @@ var intervalID = setInterval(function(){
 },5000)
 
 function fnChange(){
-  if(n > 11){n=1}
+  if(n > 12){n=1}
   if(n < 1){n=2}
 }
 
