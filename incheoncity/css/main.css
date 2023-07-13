@@ -1,6 +1,13 @@
+.main-sec {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .section1 {
   position: relative;
-  margin-top: 50px;
+  width: 780px;
+  height: 450px;
 }
 .section1 .carousel {
   position: absolute;
@@ -25,7 +32,7 @@
 }
 .section1 .carousel button {
   position: absolute;
-  top: 70%;
+  top: 50%;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -36,21 +43,26 @@
 .section1 .carousel button:hover {
   opacity: 1;
 }
-.section1 .carousel button::before {
-  content: "";
-  position: absolute;
-  transform: translate(50%, 50%, -50%, -50%);
-  top: 0;
-  bottom: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--dark-color);
-}
 .section1 .carousel button.prev {
-  top: 50%;
   left: 20px;
 }
 .section1 .carousel button.next {
   right: 20px;
+}
+
+.section2 {
+  font-size: 2rem;
+}
+.section2 .box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.section2 .text-box {
+  display: flex;
+  font-size: 1.5rem;
+  border: 1px solid #000;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
