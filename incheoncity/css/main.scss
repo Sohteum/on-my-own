@@ -6,14 +6,14 @@
 
 .section1 {
   position: relative;
-  width: 780px;
-  height: 450px;
+  width: 1000px;
+  height: 500px;
   .carousel {
     position: absolute;
     transform: translate(50%, 50%, -50%, -50%);
     top: 0;
     bottom: 0;
-    width: min(90%, 800px);
+    width: min(90%, 900px);
     img {
       width: 100%;
       &.dummy {
@@ -40,17 +40,7 @@
       &:hover {
         opacity: 1;
       }
-      // &::before {
-      //   content: "";
-      //   position: absolute;
-      //   // transform: translate(50%, 50%, -50%, -50%);
-      //   top: 0;
-      //   bottom: 0;
-      //   width: 10px;
-      //   height: 10px;
-      //   border-radius: 50%;
-      //   background: #000;
-      // }
+
       &.prev {
         left: 20px;
       }
@@ -62,18 +52,49 @@
 } //section1
 
 .section2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   .box {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
+    width: 600px;
   }
   .text-box {
     display: flex;
-    font-size: 1.5rem;
-    border: 1px solid #000;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 270px;
+    height: 100px;
+    border: none;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
+    margin: 3px;
+  }
+  .text-box.box1 {
+    background-color: aquamarine;
+  }
+  .text-box.box2 {
+    background-color: lightgoldenrodyellow;
+  }
+  .text-box.box3 {
+    background-color: lightgray;
+  }
+  .text-box.box4 {
+    background-color: rgb(200, 255, 226);
+  }
+}
+
+.mayor {
+  position: relative;
+   .img {
+    position: absolute;
+    width: 100%;
+    top:0;
+    right:0;
+  }
+  .desc{
+    position: absolute;
   }
 }
