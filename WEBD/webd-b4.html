@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 레이아웃 b-4</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    #wrap {
+      width: 100%;
+    }
+
+    #header {
+      width: 100%;
+      background-color: #b9b9b9;
+    }
+
+    #header .header_container {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    #header .header_container .logo {
+      width: 20%;
+      height: 100px;
+      background-color: #5b5b5b;
+
+    }
+
+    #header .header_container .nav {
+      width: 80%;
+      height: 100px;
+      background-color: #3e3e3e;
+
+    }
+
+    #slider {
+      width: 1200px;
+      height: 300px;
+      margin: 0 auto;
+      background-color: #b9b9b9;
+    }
+
+    #contents {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    #contents .contents1 {
+      width: 33.333%;
+      height: 200px;
+      background-color: #f8f79d;
+
+    }
+
+    #contents .contents2 {
+      width: 33.333%;
+      height: 200px;
+      background-color: #d0cf90;
+    }
+
+    #contents .contents3 {
+      width: 33.333%;
+      height: 200px;
+      background-color: #84836d;
+
+    }
+
+    #footer {
+      width: 100%;
+      background-color: #554747;
+    }
+
+    #footer .footer_container {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    #footer .footer_container .footer1 {
+      width: 80%;
+    }
+
+    #footer .footer_container .footer1-1 {
+      width: 100%;
+      height: 50px;
+      background-color: #d0ffe4;
+    }
+
+    #footer .footer_container .footer1-2 {
+      width: 100%;
+      height: 50px;
+      background-color: #edc8c8;
+    }
+
+    #footer .footer_container .footer2 {
+      width: 20%;
+      height: 100px;
+      background-color: #9e8585;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="header_container">
+        <div class="logo"></div>
+        <div class="nav"></div>
+      </div>
+    </header>
+    <article id="slider"></article>
+    <main id="contents">
+      <div class="contents1"></div>
+      <div class="contents2"></div>
+      <div class="contents3"></div>
+    </main>
+    <footer id="footer">
+      <div class="footer_container">
+        <div class="footer1">
+          <div class="footer1-1"></div>
+          <div class="footer1-2"></div>
+        </div>
+        <div class="footer2"></div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
