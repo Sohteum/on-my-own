@@ -13,16 +13,25 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
 
   <script src="https://code.jquery.com/jquery-latest.js"></script>
   <title>IamGeaGeul</title>
 </head>
 
 <body>
-  <h1>
-    제목1
-  </h1>
-  <h2>
-    제목2
-  </h2>
-  <i style="color:red;" class="fa-solid fa-bars"></i>
+  <header>
+    <div class="top">
+      <nav class="member">
+        <a href="./index.php"></a>
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+
+      </nav>
+    </div>
+    <div class="center">
+      <h1>로고</h1>
+      <nav class="gnb lg"></nav>
+      <button class="mbtn">버튼</button>
+    </div>
+  </header>
