@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹디자인기능사 d-2</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    #wrap {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #aside {
+      width: 200px;
+    }
+
+    #aside h1 {
+      width: 200px;
+      height: 100px;
+      background-color: #838383;
+    }
+    #aside nav {
+      height: 550px;
+      background-color: #847f7f;
+    }
+
+    #main {
+      width: calc(100% - 200px);
+      display: flex;
+    }
+
+    #main .gallery1 {
+      width: calc(100% - 200px - 230px);
+      height: 400px;
+      background-color: #cccccc;
+    }
+
+    #main .gallery2 {
+      width: 230px;
+      height: 400px;
+      background-color: #b8b8b8;
+    }
+
+    #main .news {
+      width: calc(100% - 200px);
+      height: 250px;
+      background-color: #bbbbbb;
+    }
+
+    #footer {
+      width: 100%;
+display: flex;      background-color: #9b9b9b;
+    }
+
+    #footer .logo {
+      width: 20%;
+      height: 100px;
+      background-color: #b7a3a3;
+    }
+    #footer .lorem {
+      width: 60%;
+      height: 100px;
+      background-color: #cdb6b6;
+    }
+
+    #footer .famliy_site {
+      width: 20%;
+      height: 100px;
+      background-color: #a79494;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <aside id="aside">
+      <h1></h1>
+      <nav></nav>
+    </aside>
+    <main id="main">
+      <article class="gallery1"></article>
+      <article class="gallery2"></article>
+      <article class="news"></article>
+    </main>
+    <footer id="footer">
+      <div class="logo"></div>
+      <div class="lorem"></div>
+      <div class="famliy_site"></div>
+    </footer>
+  </div>
+</body>
+
+</html>
