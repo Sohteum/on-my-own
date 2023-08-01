@@ -10,7 +10,7 @@
       padding: 0;
       margin: 0;
     }
-    
+
     #wrap {
       width: 100%;
       display: flex;
@@ -19,6 +19,7 @@
 
     #aside {
       width: 200px;
+      height: 650px;
     }
 
     #aside h1 {
@@ -34,27 +35,45 @@
 
     #main {
       width: calc(100% - 200px);
+      height: 650px;
+    }
+
+    #slider {
+      width: 100%;
+      height: 400px;
       display: flex;
     }
 
-    #main .gallery1 {
-      width: calc(100% - 200px - 230px);
+    #slider .slider {
+      width: calc(100% - 230px);
       height: 400px;
       background-color: #cccccc;
     }
 
-    #main .gallery2 {
+    #slider .image {
       width: 230px;
       height: 400px;
-      background-color: #b8b8b8;
+      background-color: #b5b1b1;
     }
 
-    #main .news {
-      width: calc(100% - 200px);
+
+    #main #contents {
+      width: 100%;
+      height: 250px;
+      display: flex;
+    }
+    
+    #contents .contents1 {
+      width: 50%;
       height: 250px;
       background-color: #bbbbbb;
     }
-  
+    
+    #contents .contents2 {
+      width: 50%;
+      height: 250px;
+      background-color: #a9a2a2;
+    }
 
     #footer {
       width: 100%;
@@ -89,10 +108,14 @@
       <nav></nav>
     </aside>
     <main id="main">
-      <article class="gallery1"></article>
-      <article class="gallery2"></article>
-      <article class="news1"></article>
-      <article class="news2"></article>
+      <article id="slider">
+        <div class="slider"></div>
+        <div class="image"></div>
+      </article>
+      <article id="contents">
+        <div class="contents1"></div>
+        <div class="contents2"></div>
+      </article>
     </main>
     <footer id="footer">
       <div class="logo"></div>
