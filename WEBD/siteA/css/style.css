@@ -93,10 +93,7 @@ img {
   background-color: #ecf1ff;
 }
 
-#header .nav {
-  position: relative;
-  z-index: 1000;
-}
+
 
 /* slider */
 #slider {
