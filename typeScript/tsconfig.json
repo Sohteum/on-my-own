@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target" : "es6", //ES6스크립트형태로 컴파일
+    "module" : "ESnext", //ESM 최신 모듈 사용
+    "moduleResolution": "Node", //import 폴더경로의 index.js파일 생략 가능
+    "esModuleInterop": true, //ESM방식과 commonJs(nodejs방식) 호환
+    "isolatedModules": false, //모든 파일을 모듈화
+    "lib" : ["ESNext","DOM"] ,//컴파일시 필요한 라이브러리 선언
+    "strict": true //엄격한 오류 검사
+  } 
+}
